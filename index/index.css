@@ -1,0 +1,62 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+body{
+    text-transform: uppercase;
+    background-color: #e8e8e8;
+}
+.calendar{
+    display: flex;
+    margin: 5vh auto;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.sep-calender {
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,2);
+    
+}
+.sep-calender h1{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.sep-calender ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+}
+li {
+    padding: 5px;
+    text-align: center;
+}
+li:nth-child(7n+1) {
+color: rgb(233, 58, 58)
+}
+li:nth-child(7n-1) {
+    color: rgb(70, 209, 28);
+}
+.prev-month,
+.prev-month~li {
+    opacity: 0;
+}
+.first-day,
+.first-day~li{
+    opacity: 1 !important;
+    font-weight: 900;
+}
+
+.last-day~li {
+    opacity: 0 !important;
+    font-weight: 200;
+}
+section{
+    background-image: url(C:\Users\techl\Downloads/carlo1.jpg)
+}
+
+
+
